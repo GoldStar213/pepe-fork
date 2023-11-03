@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Evermore';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Evermore'), url('https://fonts.cdnfonts.com/s/96082/Evermore-WyDmO.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'gentydemo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('gentydemo'), url('../fonts/gentydemo-regular.otf') format('otf');
+}
+
+.evermore {
+    font-family: Evermore, sans-serif;
+}
+
+.gentydemo {
+    font-family: gentydemo, sans-serif;
+}
