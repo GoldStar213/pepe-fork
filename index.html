@@ -16,28 +16,47 @@
 </head>
 
 <body>
-    <header class="bg-[#4b9540] h-[151px] flex items-center" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);">
-        <div class="max-w-[1200px] mx-auto flex justify-between w-full">
-            <div class="">
-                <a href="">
-                    <img src="./images/logo.webp" alt="">
+    <header class="relative bg-[#4b9540] py-3 sm:py-4 md:py-5 flex items-center justify-between shadow-md">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 flex justify-between items-center w-full">
+            <div class="flex-shrink-0">
+                <a href="#">
+                    <img src="./images/logo.webp" alt="Logo" class="h-10 sm:h-12 md:h-16">
                 </a>
             </div>
-            <div class="flex items-center gap-[20px]">
-                <a href="#home" class="text-white text-[12px] evermore">home</a>
-                <a href="#about" class="text-white text-[12px] evermore">about</a>
-                <a href="#how-to-buy" class="text-white text-[12px] evermore">how to buy</a>
-                <a href="https://bridge.pepe.vip/" target="_blank" class="text-white text-[12px] evermore">bridge</a>
-                <a href="#tokenomics" class="text-white text-[12px] evermore">tokenomics</a>
-                <a href="#roadmap" class="text-white text-[12px] evermore">roadmap</a>
+            <nav class="hidden md:flex items-center space-x-4">
+                <a href="#home" class="text-white text-sm sm:text-base md:text-[12px] evermore">Home</a>
+                <a href="#about" class="text-white text-sm sm:text-base md:text-[12px] evermore">About</a>
+                <a href="#how-to-buy" class="text-white text-sm sm:text-base md:text-[12px] evermore">How to Buy</a>
+                <a href="https://bridge.pepe.vip/" target="_blank" class="text-white text-sm sm:text-base md:text-[12px] evermore">Bridge</a>
+                <a href="#tokenomics" class="text-white text-sm sm:text-base md:text-[12px] evermore">Tokenomics</a>
+                <a href="#roadmap" class="text-white text-sm sm:text-base md:text-[12px] evermore">Roadmap</a>
                 <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x6982508145454Ce325dDbE47a25d4ec3d2311933" target="_blank"
-                    class="text-white text-[12px] w-[145px] h-[44px] rounded-[22px] border-white border-[1px] evermore ml-[20px] flex justify-center items-center">buy
-                    now</a>
+                    class="text-white text-sm sm:text-base md:text-[12px] evermore px-3 py-2 bg-[#4b9540] border border-white rounded-full hover:bg-white hover:text-[#4b9540]">Buy Now</a>
+            </nav>
+            <div class="md:hidden">
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="text-white p-2 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <!-- Mobile menu (hidden by default) -->
+                <div id="mobile-menu" class="hidden">
+                    <a href="#home" class="block text-white text-sm sm:text-base md:text-lg py-2">Home</a>
+                    <a href="#about" class="block text-white text-sm sm:text-base md:text-lg py-2">About</a>
+                    <a href="#how-to-buy" class="block text-white text-sm sm:text-base md:text-lg py-2">How to Buy</a>
+                    <a href="https://bridge.pepe.vip/" target="_blank" class="block text-white text-sm sm:text-base md:text-lg py-2">Bridge</a>
+                    <a href="#tokenomics" class="block text-white text-sm sm:text-base md:text-lg py-2">Tokenomics</a>
+                    <a href="#roadmap" class="block text-white text-sm sm:text-base md:text-lg py-2">Roadmap</a>
+                    <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x6982508145454Ce325dDbE47a25d4ec3d2311933" target="_blank"
+                        class="block text-white text-sm sm:text-base md:text-lg py-2">Buy Now</a>
+                </div>
             </div>
         </div>
-    </header>
+    </header>    
+    
     <main class="relative bg-[#4b9540]">
-        <div class="absolute w-full bg-cover opacity-[0.2] top-0 left-0"
+        <div class="absolute w-full opacity-[0.2] top-0 left-0 bg-contain bg-no-repeat"
             style="height: calc(100vh - 151px); background-image: url(./images/background-cow01.png);"></div>
         <section id="home" class="relative z-[2] pb-[80px]">
             <div class="pt-[147px]">
@@ -112,11 +131,11 @@
         <img src="./images/paragraph.png" alt="" class="w-full h-[20px] object-cover">
 
         <section id="about" class="pt-[100px] pb-[80px]">
-            <div class="max-w-[1200px] mx-auto flex justify-space-between">
+            <div class="max-w-[1200px] mx-auto flex justify-space-between flex-wrap-reverse">
                 <div class="w-1/2">
                     <img src="./images/about.webp" class="w-full" alt="">
                 </div>
-                <div class="w-1/2 pl-40px pl-[100px]">
+                <div class="w-1/2 pl-40px pl-[100px] min-w-[350px]">
                     <h2 class="text-white mb-[50px] text-[56px] evermore">about</h2>
                     <p class="text-white text-[23px]">Pepe is tired of watching everyone play hot potato with the endless derivative ShibaCumGMElonKishuTurboAssFlokiMoon Inu coins. The Inu’s have had their day. It’s time for the most recognizable meme in the world to take his reign as king of the memes.</p><br><br>
                     <p class="text-white text-[23px]">Pepe is here to make memecoins great again. Launched stealth with no presale, zero taxes, LP burnt and contract renounced, $PEPE is a coin for the people, forever. Fueled by pure memetic power, let $PEPE show you the way.</p>
@@ -165,12 +184,12 @@
                         <p class="text-white text-[19px]">download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.</p>
                     </div>
                 </div>
-                <div class="w-full mt-[50px] flex justify-between items-start">
-                    <div class="w-1/2">
-                        <iframe src="https://app.uniswap.org/#/swap?outputCurrency=0x6982508145454ce325ddbe47a25d4ec3d2311933" class="w-fill min-w-[630px] min-h-[455px]" frameborder="0"></iframe>
+                <div class="w-full mt-[50px] flex justify-around md:justify-between items-start flex-wrap">
+                    <div class="w-full md:w-1/2">
+                        <iframe src="https://app.uniswap.org/#/swap?outputCurrency=0x6982508145454ce325ddbe47a25d4ec3d2311933" class="w-full min-w-[350px] md:w-[630px] min-h-[455px]" frameborder="0"></iframe>
                     </div>
                     <div class="w-7/12 max-w-[453px]">
-                        <img src="./images/how-to-buy.webp" class="w-fill max-w-[453px]" alt="">
+                        <img src="./images/how-to-buy.webp" class="w-full max-w-[453px]" alt="">
                     </div>
                 </div>
             </div>
@@ -180,7 +199,7 @@
 
         <section id="tokenomics" class="pt-[100px] pb-[80px]">
             <div class="max-w-[1200px] mx-auto">
-                <h1 class="text-white text-[56px] text-center evermore">tokenomics</h1>
+                <h1 class="text-white text-[20px] md:text-[56px] text-center evermore">tokenomics</h1>
                 <div class="mt-[50px] flex justify-between items-start">
                     <div class="w-6/12">
                         <h3 class="text-center text-white text-[25px] evermore">Token Supply:</h3><br>
@@ -200,18 +219,19 @@
         <img src="./images/paragraph.png" alt="" class="w-full h-[20px] object-cover">
 
         <section id="roadmap" class="pt-[50px] pb-[100px]">
-            <div class="max-w-[1200px] mx-auto">
-                <div class="flex justify-between">
-                    <img src="./images/roadmap-left.webp" alt="">
-                    <div class="">
-                        <h1 class="text-white text-[56px] text-center evermore">roadmap</h1>
+            <div class="max-w-[1200px] mx-auto w-full">
+                <div class="flex justify-around md:justify-between w-full flex-wrap">
+                    <img src="./images/roadmap-left.webp" class="w-3/12 min-w-[300px] hidden md:block" alt="">
+                    <div class="w-1/2 min-w-[300px]">
+                        <h1 class="text-white text-[40px] md:text-[56px] text-center evermore">roadmap</h1>
                         <div class="mt-[30px] w-content bg-[#2a4a1d] p-[30px] border-[1px] border-[#fff] rounded-tr-[30px] rounded-bl-[30px]">
                             <p class="text-white text-[22px]">Phase 1: Meme</p>
                             <p class="text-white text-[22px]">Phase 2: Vibe and HODL</p>
                             <p class="text-white text-[22px]">Phase 3: Meme Takeover</p>
                         </div>
                     </div>
-                    <img src="./images/roadmap-right.webp" alt="">
+                    <img src="./images/roadmap-right.webp" class="w-3/12 min-w-[300px]" alt="">
+                    <img src="./images/roadmap-left.webp" class="w-3/12 min-w-[300px] block md:hidden" alt="">
                 </div>
             </div>
         </section>
@@ -244,6 +264,9 @@
     <footer class="bg-[#489637] py-[15px]">
         <p class="text-center">© 2023 by PEPE. All rights reserved!</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
