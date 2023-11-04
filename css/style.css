@@ -12,6 +12,10 @@
     src: local('gentydemo'), url('../fonts/gentydemo-regular.otf') format('otf');
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .evermore {
     font-family: Evermore, sans-serif;
 }
