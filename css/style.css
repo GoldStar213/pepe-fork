@@ -19,3 +19,9 @@ html {
 .evermore {
     font-family: Evermore, sans-serif;
 }
+
+@media(min-width: 768px) and (max-width: 888px) {
+    #roadmap h1 {
+        font-size: 50px;
+    }
+}
