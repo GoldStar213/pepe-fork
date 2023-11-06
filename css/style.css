@@ -20,6 +20,30 @@ html {
     font-family: Evermore, sans-serif;
 }
 
+@media(max-width: 995px) {
+    .pc-menu {
+        display: none !important;
+    }
+
+    .sp-menu {
+        display: block !important;
+    }
+}
+
+@media(max-width: 1130px) {
+    .multi-link {
+        justify-content: space-around !important;
+    }
+
+    .main-visual {
+        padding-left: 0;
+    }
+
+    .main-visual>div:first-of-type {
+        justify-content: center;
+    }
+}
+
 @media(min-width: 768px) and (max-width: 888px) {
     #roadmap h1 {
         font-size: 50px;
